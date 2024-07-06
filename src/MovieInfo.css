@@ -120,6 +120,7 @@
     }
 }
 
+/* Media queries for very small screens */
 @media (max-width: 400px) {
     .movie-details p,
     .movieSummary p {
@@ -132,5 +133,89 @@
 
     .comment-form {
         margin-bottom: 1.2%;
+    }
+}
+
+/* Media queries for larger screens in landscape orientation */
+@media (max-width: 800px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 3%;
+    }
+
+    .movie-details p,
+    .movieSummary p {
+        font-size: 1.1em;
+    }
+
+    .comment {
+        padding: 8px;
+        margin-bottom: 4px;
+    }
+
+    .comment-form {
+        margin-bottom: 1.5%;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 4%;
+    }
+
+    .movie-details p,
+    .movieSummary p {
+        font-size: 1.3em;
+    }
+
+    .comment {
+        padding: 9px;
+        margin-bottom: 4px;
+    }
+
+    .comment-form {
+        margin-bottom: 1.6%;
+    }
+}
+
+/* Media queries for 400px in landscape */
+@media (max-width: 400px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .movie-poster {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .movie-details {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .movie-details p {
+        font-size: 0.9em;
+    }
+
+    .movieSummary {
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .movieSummary p {
+        font-size: 0.9em;
+    }
+
+    .comment {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .comment-form {
+        width: 100%;
+        margin-bottom: 1%;
     }
 }
