@@ -72,3 +72,75 @@
         font-size: 0.9em;
     }
 }
+
+/* Media queries for landscape orientation */
+@media (max-width: 800px) and (orientation: landscape) {
+    .login-form {
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 2%;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 2%;
+    }
+
+    .login-form p {
+        font-size: 1em;
+    }
+}
+
+/* Media queries for very small screens */
+@media (max-width: 400px) {
+    .login-form {
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 2%;
+    }
+
+    .login-form button {
+        padding: 6px 12px;
+        margin-top: 5px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 1%;
+    }
+
+    .login-form p {
+        font-size: 0.8em;
+    }
+}
+
+/* Media queries for large screens in landscape orientation */
+@media (max-width: 1200px) and (orientation: landscape) {
+    .login-form {
+        font-size: 1.5em;
+        margin: 20px;
+        padding: 2.5%;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 1.5%;
+    }
+
+    .login-form p {
+        font-size: 1.2em;
+    }
+}
