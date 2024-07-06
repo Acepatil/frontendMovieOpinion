@@ -1,7 +1,4 @@
 /* src/Login.css */
-body {
-    background-image: url('assets\background.jpg');
-}
 
 .login-container {
     display: flex;
