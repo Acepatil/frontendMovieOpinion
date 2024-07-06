@@ -122,7 +122,7 @@ function MovieInfo({userName}) {
                 </div>
                 {comments.map(comment => (
                     <div className={`comment ${comment.prediction?"green":"red"}`} key={comment.id}>
-                        {comment.content} <span>----</span> {comment.username}
+                        {comment.content} ------- {comment.username}
                     </div>
                 ))}
             </div>
